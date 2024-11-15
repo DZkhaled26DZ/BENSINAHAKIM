@@ -7,6 +7,53 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>زر تحديث الصفحة</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #74ebd5, #acb6e5); /* خلفية جميلة */
+            font-family: Arial, sans-serif;
+        }
+
+        .refresh-button {
+            background: linear-gradient(145deg, #ffffff, #d4d4d4);
+            border-radius: 12px;
+            box-shadow: 4px 4px 8px #b8b8b8, -4px -4px 8px #ffffff;
+            padding: 15px 30px;
+            text-align: center;
+            color: #333;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            position: relative;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .refresh-button:hover {
+            background: linear-gradient(145deg, #e2e2e2, #ffffff);
+            box-shadow: 2px 2px 4px #b8b8b8, -2px -2px 4px #ffffff;
+            transform: scale(1.05); /* تكبير الزر عند المرور فوقه */
+            cursor: pointer;
+        }
+
+        .refresh-button:active {
+            background: linear-gradient(145deg, #d4d4d4, #e2e2e2);
+            box-shadow: inset 2px 2px 4px #b8b8b8, inset -2px -2px 4px #ffffff;
+            transform: scale(0.95); /* تصغير الزر قليلاً عند النقر */
+        }
+    </style>
+</head>
+<body>
+    <a class="refresh-button" href="javascript:window.location.reload()">⟳ زر تحديث الصفحة</a>
+</body>
 
 <body>
     <div class="container">
