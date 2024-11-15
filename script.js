@@ -4,7 +4,7 @@ const BASE_URL = 'https://api.binance.com/api/v3';
 
 // State
 let isArabic = true;
-let isDark = false;
+let isDark = true;
 let currentTimeframe = '1h';
 let websocket = null;
 let cryptoData = [];
